@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<!--Tab at the top of the page-->
+		{% if title %}
+		<title>{{ title }} - Microblog</title>
+		{% else %}
+		<title>Welcome to Microblog </title>
+		{% endif %}
+	</head>
+	<body>
+		<!--Navigation Bar-->
+		<div>Microblog:
+		<a href="/index">Home</a>
+		<a href="/login">Login<</a>
+		</div>
+		<hr>
+		<!--allows the page to output their corresponding formats -> ex: Home will login.html to format the contents-->
+		{% block content %}{% endblock %}
+	</body>
+</html>
+
+
